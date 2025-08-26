@@ -7,16 +7,18 @@
   <style>
     html, body { margin:0; padding:0; height:100%; }
     .wrap { box-sizing:border-box; width:100%; min-height:100vh; padding:0; }
-    /* Make the iframe fill the Notion block width; height is a starting point users can resize */
-    iframe { width:100%; height:900px; border:0; }
+    /* Notion iframes are full width; pick a generous default height */
+    iframe { width:100%; border:0; }
   </style>
 </head>
 <body>
   <div class="wrap">
     <!-- AuthoredUp’s iFrame embed (max compatibility, works in Notion) -->
+    <!-- Want dark mode? Add: ?theme=dark to the src -->
     <iframe
       src="https://files.authoredup.com/aup-post-writer-embed.html"
       title="AuthoredUp LinkedIn Post Writer"
+      style="width:100%; height:1200px; border:0;"
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"
       allow="clipboard-read; clipboard-write">
